@@ -1,0 +1,14 @@
+@hostname = 127.0.0.1
+@port = 8000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+
+GET http://{{host}}/api/tasks
+
+###
+
+GET http://{{host}}/api/tasks/1
+
+###
+
+POST http://{{host}}/api/tasks/1/complete/
